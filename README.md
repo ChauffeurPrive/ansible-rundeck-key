@@ -6,7 +6,6 @@ The `kptn_rundeck_key` module has been designed to help up manage our rundeck se
 
 Here is a simple way to create password kind secret key in rundeck using this module:
 ```yaml
-# Create a key
 - name: Create a rundeck key
   kptn_rundeck_key:
     url: https://rundeck.foo.bar
@@ -22,7 +21,6 @@ As you can see, the state default behaviour for the `state` argument is `present
 
 If you want to create private key instead _(you can also create a public one by the way)_, you can use `type` argument:
 ```yaml
-# Create a key
 - name: Create a rundeck key
   kptn_rundeck_key:
     url: https://rundeck.foo.bar
