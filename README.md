@@ -31,7 +31,7 @@ If you want to create private key instead _(you can also create a public one by 
     path: foo
 ```
 
-Exemples:
+Others exemples:
 ```yaml
 - name: Update an existing rundeck key
   kptn_rundeck_key:
