@@ -16,7 +16,7 @@ Here is a simple way to create password kind secret key in rundeck using this mo
     path: foo
 ```
 
-If you want to create private key (or public) instead, you can use `type` argument:
+If you want to create private key instead _(you can also create a public one by the way)_, you can use `type` argument:
 ```yaml
 # Create a key
 - name: Create a rundeck key
