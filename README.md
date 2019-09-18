@@ -43,7 +43,8 @@ Exemples:
     value: mynewstrongpassword
     path: foo
     state: update
-
+```
+```yaml
 - name: Remove rundeck key
   kptn_rundeck_key:
     url: https://rundeck.foo.bar
