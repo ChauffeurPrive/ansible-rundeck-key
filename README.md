@@ -16,6 +16,10 @@ Here is a simple way to create password kind secret key in rundeck using this mo
     path: foo
 ```
 
+As you can see, the state default behaviour for the `state` argument is `present`, which that the key will be created if it doesn't exist. But if you want to update or delete a key, you can use the following arguments:
+* **update:** Update a key
+* **absent:** Delete a key
+
 If you want to create private key instead _(you can also create a public one by the way)_, you can use `type` argument:
 ```yaml
 # Create a key
@@ -28,10 +32,6 @@ If you want to create private key instead _(you can also create a public one by 
     type: private
     path: foo
 ```
-
-As you can see, the state default behaviour for the `state` argument is `present`, which that the key will be created if it doesn't exist. But if you want to update or delete a key, you can use the following arguments:
-* **update:** Update a key
-* **absent:** Delete a key
 
 Exemples:
 ```yaml
