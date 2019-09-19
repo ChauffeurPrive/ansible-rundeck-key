@@ -1,13 +1,13 @@
 # Rundeck secret key management module
 
-The `kptn_rundeck_key` module has been designed to help up manage our rundeck secret keys through Ansible.
+The `rundeck_key` module has been designed to help up manage our rundeck secret keys through Ansible.
 
 ## How to
 
 Here is a simple way to create password kind secret key in rundeck using this module:
 ```yaml
 - name: Create a rundeck key
-  kptn_rundeck_key:
+  rundeck_key:
     url: https://rundeck.foo.bar
     token: ABCDEFGHIJKLMNOPQRSTUVWXYZ
     name: bar
@@ -22,7 +22,7 @@ As you can see, the state default behaviour for the `state` argument is `present
 If you want to create private key instead _(you can also create a public one by the way)_, you can use `type` argument:
 ```yaml
 - name: Create a rundeck key
-  kptn_rundeck_key:
+  rundeck_key:
     url: https://rundeck.foo.bar
     token: ABCDEFGHIJKLMNOPQRSTUVWXYZ
     name: bar
@@ -34,7 +34,7 @@ If you want to create private key instead _(you can also create a public one by 
 Others exemples:
 ```yaml
 - name: Update an existing rundeck key
-  kptn_rundeck_key:
+  rundeck_key:
     url: https://rundeck.foo.bar
     token: ABCDEFGHIJKLMNOPQRSTUVWXYZ
     name: bar
@@ -44,7 +44,7 @@ Others exemples:
 ```
 ```yaml
 - name: Remove rundeck key
-  kptn_rundeck_key:
+  rundeck_key:
     url: https://rundeck.foo.bar
     token: ABCDEFGHIJKLMNOPQRSTUVWXYZ
     name: bar

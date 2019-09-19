@@ -12,7 +12,7 @@ ANSIBLE_METADATA = {
 
 DOCUMENTATION = '''
 ---
-module: kptn_rundeck_key
+module: rundeck_key
 short_description: Manage rundeck keys
 version_added: "2.8"
 description:
@@ -53,7 +53,7 @@ author:
 EXAMPLES = '''
 # Create a key
 - name: Create rundeck key
-  kptn_rundeck_key:
+  rundeck_key:
     url: https://rundeck.local
     token: ABCDEFGHIJKLMNOPQRSTUVWXYZ
     name: bar
@@ -61,7 +61,7 @@ EXAMPLES = '''
     path: foo
 
 - name: Update an existing rundeck key
-  kptn_rundeck_key:
+  rundeck_key:
     url: https://rundeck.local
     token: ABCDEFGHIJKLMNOPQRSTUVWXYZ
     name: bar
@@ -70,7 +70,7 @@ EXAMPLES = '''
     state: update
 
 - name: Remove rundeck key
-  kptn_rundeck_key:
+  rundeck_key:
     url: https://rundeck.local
     token: ABCDEFGHIJKLMNOPQRSTUVWXYZ
     name: bar
