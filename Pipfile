@@ -1,0 +1,13 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+
+[dev-packages]
+
+[requires]
+# Please note we can't lock python version more precisely while allowing multiple versions
+# See : https://github.com/pypa/pipenv/issues/1050
+python_version = "3"
